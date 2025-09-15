@@ -1,0 +1,33 @@
+=== DANN Evaluation Results ===
+
+Source Domain:
+Accuracy: 52.44%
+F1-macro: 0.4386
+Precision-macro: 0.5290
+Recall-macro: 0.5242
+              precision    recall  f1-score   support
+
+      glioma       0.44      0.99      0.61      2004
+  meningioma       0.32      0.02      0.04      2004
+   pituitary       0.82      0.56      0.66      2048
+
+    accuracy                           0.52      6056
+   macro avg       0.53      0.52      0.44      6056
+weighted avg       0.53      0.52      0.44      6056
+
+
+Target Domain:
+Accuracy: 54.28%
+F1-macro: 0.4103
+Precision-macro: 0.4193
+Recall-macro: 0.4526
+              precision    recall  f1-score   support
+
+      glioma       0.52      0.81      0.63      1426
+  meningioma       0.10      0.01      0.01       708
+   pituitary       0.64      0.54      0.58       930
+
+    accuracy                           0.54      3064
+   macro avg       0.42      0.45      0.41      3064
+weighted avg       0.46      0.54      0.48      3064
+

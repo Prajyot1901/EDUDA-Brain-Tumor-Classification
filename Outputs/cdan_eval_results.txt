@@ -1,0 +1,33 @@
+=== CDAN Evaluation Results ===
+
+Source Domain:
+Accuracy : 85.17%
+F1-macro: 0.8426
+Precision-macro: 0.8834
+Recall-macro: 0.8508
+              precision    recall  f1-score   support
+
+      glioma       0.72      1.00      0.84      2004
+  meningioma       0.98      0.58      0.73      2004
+   pituitary       0.95      0.98      0.96      2048
+
+    accuracy                           0.85      6056
+   macro avg       0.88      0.85      0.84      6056
+weighted avg       0.88      0.85      0.84      6056
+
+
+Target Domain:
+Accuracy : 50.46%
+F1-macro: 0.4153
+Precision-macro: 0.3903
+Recall-macro: 0.4483
+              precision    recall  f1-score   support
+
+      glioma       0.50      0.60      0.55      1426
+  meningioma       0.03      0.01      0.02       708
+   pituitary       0.63      0.73      0.68       930
+
+    accuracy                           0.50      3064
+   macro avg       0.39      0.45      0.42      3064
+weighted avg       0.43      0.50      0.47      3064
+
