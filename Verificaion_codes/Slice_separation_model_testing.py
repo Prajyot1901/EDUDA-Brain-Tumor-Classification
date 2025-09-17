@@ -10,10 +10,10 @@ import torchvision.transforms as transforms
 # CONFIG
 # =====================================================
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-MODEL_PATH = r"Transfer learning\UDA_MRI\Model weights\Slice_seperation.pth"  # path to your saved model
-SOURCE_ROOT = r"Transfer learning\UDA_MRI\Slice_Separation_Training_Testing\Testing_Source_binary"  # <-- change
-TARGET_ROOT = r"Transfer learning\UDA_MRI\Slice_Separation_Training_Testing\Testing_Target_binary"  # <-- change
-LOG_SAVE_PATH = r"UDA_MRI\Outputs"         # folder to save results
+MODEL_PATH = r".\Model weights\Slice_seperation.pth"  
+SOURCE_ROOT = r".\Slice_Separation_Training_Testing\Testing_Source_binary"  
+TARGET_ROOT = r".\Slice_Separation_Training_Testing\Testing_Target_binary"  
+LOG_SAVE_PATH = r".\Outputs"         
 os.makedirs(LOG_SAVE_PATH, exist_ok=True)
 
 BATCH_SIZE = 4
@@ -132,3 +132,4 @@ if __name__ == "__main__":
     )
     torch.save(log_dict, log_file)
     print("Results saved to:", log_file)
+
