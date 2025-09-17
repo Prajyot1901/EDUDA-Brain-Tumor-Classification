@@ -17,10 +17,10 @@ import seaborn as sns
 # -----------------------
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-BEST_MODEL_PATH = r"Transfer learning\UDA_MRI\Model weights\Axial_weights.pth"
-MRI1_ROOT       = r"Transfer learning\UDA_MRI\Slice_Separated_Dataset\Axial\Source"
-MRI2_ROOT       = r"Transfer learning\UDA_MRI\Slice_Separated_Dataset\Axial\Target"
-LOG_SAVE_PATH   = r"Transfer learning\UDA_MRI\Outputs"
+BEST_MODEL_PATH = r".\Model weights\Axial_weights.pth"
+MRI1_ROOT       = r".\Slice_Separated_Dataset\Axial\Source"
+MRI2_ROOT       = r".\Slice_Separated_Dataset\Axial\Target"
+LOG_SAVE_PATH   = r".\Outputs"
 os.makedirs(LOG_SAVE_PATH, exist_ok=True)
 
 LABELS = ['glioma', 'meningioma', 'pituitary']
@@ -187,3 +187,4 @@ if __name__ == "__main__":
     )
     torch.save(log_dict, log_file)
     print(f"\nResults saved to: {log_file}")
+
