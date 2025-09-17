@@ -1,8 +1,12 @@
-# EDUDA-Brain-Tumor-Classification
+### EDUDA-Brain-Tumor-Classification
 anatomical Orientation specific model for Domain adaptation in brain tumor classification
 Nothing
+###To verify the results
+1) Download the data from the given link 
+## 📂 Dataset  
+The dataset used in this project is publicly available on **Zenodo**:  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17136905.svg)](https://doi.org/10.5281/zenodo.17136905)
 
-# EDUDA-Brain-Tumor-Classification
 
 ## 📂 Dataset  
 The dataset used in this project is publicly available on **Zenodo**:  
