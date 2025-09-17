@@ -19,10 +19,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # --- paths (adjust if needed) ---
-src_dir = r"Transfer learning\UDA_MRI\Datasets\Source"
-tgt_dir = r"Transfer learning\UDA_MRI\Datasets\Target"
-weights_dir = r"Transfer learning\UDA_MRI\Model weights"
-log_path = r"Transfer learning\UDA_MRI\Outputs\SOTA_models_eval_results.pth"
+src_dir = r".\Datasets\Source"
+tgt_dir = r".\Datasets\Target"
+weights_dir = r".\Model weights"
+log_path = r".\Outputs\SOTA_models_eval_results.pth"
 
 # =======================================================
 # DATA LOADING (same preprocessing as training)
@@ -150,3 +150,4 @@ for name, builder in model_builders.items():
 
 torch.save(results, log_path)
 print(f"\nEvaluation complete. Results saved to: {log_path}")
+
