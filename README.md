@@ -23,7 +23,6 @@ Trained model weights are available in the **GitHub Releases** section:
 Clone or download this repository and place the **verification codes** in the same directory as the dataset and Model_weights.
 
 ```bash
-git clone https://github.com/Prajyot1901/EDUDA-Brain-Tumor-Classification.git
+git clone https://github.com/Prajyot1901/EDUDA-Brain-Tumor-Classification.git ```
 
-### 4) Run the codes
-Run all the codes one by one to reproduce the results.
+### 4) Run the codes Run all the codes one by one to reproduce the results.
