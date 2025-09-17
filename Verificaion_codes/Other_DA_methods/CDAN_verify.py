@@ -8,11 +8,11 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 # ==========================================================
 # Paths
 # ==========================================================
-source_root = r"Transfer learning\UDA_MRI\Datasets\Source"
-target_root = r"Transfer learning\UDA_MRI\Datasets\Target"
-weights_path = r"Transfer learning\UDA_MRI\Model weights\cdan_model_weights.pth"
-log_txt = r"Transfer learning\UDA_MRI\Outputs\cdan_eval_results.txt"
-log_pth = r"Transfer learning\UDA_MRI\Outputs\cdan_eval_results.pth"
+source_root = r".\Datasets\Source"
+target_root = r".\Datasets\Target"
+weights_path = r".\Model weights\cdan_model_weights.pth"
+log_txt = r".\Outputs\cdan_eval_results.txt"
+log_pth = r".\Outputs\cdan_eval_results.pth"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
@@ -155,3 +155,4 @@ with open(log_txt, "w") as f:
 torch.save({"Source": src_metrics, "Target": tgt_metrics}, log_pth)
 
 print(f"\nResults saved to:\n  {log_txt}\n  {log_pth}")
+
