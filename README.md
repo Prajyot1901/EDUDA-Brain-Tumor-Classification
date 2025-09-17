@@ -3,7 +3,7 @@
 
 ---
 
-## 🔍 To Verify the Results  
+## To Verify the Results  
 
 ### 1) Download the Dataset  
 The processed dataset is publicly available on **Zenodo**:  
@@ -20,30 +20,10 @@ Trained model weights are available in the **GitHub Releases** section:
 ---
 
 ### 3) Download the Code  
-Clone or download this repository and place the **verification codes** in the same directory as the dataset and model weights.  
+Clone or download this repository and place the **verification codes** in the same directory as the dataset and Model_weights.
 
 ```bash
-git clone https://github.com/Prajyot1901/EDUDA-Brain-Tumor-Classification/verifying codes.git
+git clone https://github.com/Prajyot1901/EDUDA-Brain-Tumor-Classification.git
 
 **### 4) Run the codes**
 Run all the codes one by one to reproduce the results.
-
-
-
-
-
-
-
-
-
-## 📂 Dataset  
-The dataset used in this project is publicly available on **Zenodo**:  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17136905.svg)](https://doi.org/10.5281/zenodo.17136905)
-
----
-
-## 🧠 Model Weights  
-Trained model weights are available in the **GitHub Releases** section:  
-[![GitHub release](https://img.shields.io/github/v/release/Prajyot1901/EDUDA-Brain-Tumor-Classification?label=Download%20Model%20Weights&color=blue)](https://github.com/Prajyot1901/EDUDA-Brain-Tumor-Classification/releases)
-
----
