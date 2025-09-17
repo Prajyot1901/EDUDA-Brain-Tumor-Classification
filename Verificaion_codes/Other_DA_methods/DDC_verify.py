@@ -16,12 +16,12 @@ from sklearn.utils import shuffle
 SEED = 42
 torch.manual_seed(SEED); np.random.seed(SEED)
 
-MRI1_ROOT = r"Transfer learning\UDA_MRI\Datasets\Source"
-MRI2_ROOT = r"Transfer learning\UDA_MRI\Datasets\Target"
-BEST_MODEL_PATH = r"Transfer learning\UDA_MRI\Model weights\DDC_model_weights.pth"
-RESULT_LOG_PATH = r"Transfer learning\UDA_MRI\Outputs\DDC_eval_results.pth"
+MRI1_ROOT = r".\Datasets\Source"
+MRI2_ROOT = r".\Datasets\Target"
+BEST_MODEL_PATH = r".\Model weights\DDC_model_weights.pth"
+RESULT_LOG_PATH = r".\Outputs\DDC_eval_results.pth"
 
-LABELS = ['glioma','meningioma','pituitary']
+LABELS = ['glioma', 'meningioma' , 'pituitary']
 NUM_CLASSES = len(LABELS)
 IMAGE_SIZE = 224
 BATCH_SIZE = 32
@@ -146,3 +146,4 @@ if __name__ == "__main__":
 
     torch.save(results, RESULT_LOG_PATH)
     print(f"\nAll evaluation results saved to: {RESULT_LOG_PATH}")
+
